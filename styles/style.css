@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+}
+
+.d-flex{
+    background-color: green;
+}
+
+.navbar-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar-list > li {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-link {
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+.navbar-link:hover, #themeButton:hover{
+    color: orange;
+}
+
+#body {
+    background-color: black;
+    color: white;
+    font-size: 23px;
+}
+#navigationBar{
+    background-color: green;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+#themeButton {
+    padding: 0;
+    border: none;
+    background: none;
+    color: white;
+}
+h2 {
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-family: cursive;
+}
+
+p {
+    font-family: "Courier New", Courier, monospace;
+}
+#home {
+    /* max-width: 980px; */
+    padding-top: 0;
+    height: 100vh;
+}
+#home > div {
+    margin: 0 auto;
+}
+#about, #skills, #hobbies, #projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+#contacts {
+    margin: 0 auto;
+}
+
+span {
+    color: orange;
+}
+
+#home {
+    padding: 20px;
+}
+.skills_icons {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+#emailLink{
+    text-decoration: none;
+}
+#heading {
+    margin-top: 10px;
+}
+hr {
+    margin: 0 auto;
+}
+#hireButton {
+    background: orange;
+    background-color: orange;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 5px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    margin-bottom: 8px;
+}
+#hireButton:hover{
+    background-color: rgba(255, 166, 0, 0.815);
+}
+
+@media only screen and (max-width: 980px) {
+    div, #about, #skills, #hobbies, #projects  {
+        display: inline;
+    }
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+    .navbar-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+    h2 {
+        margin-top: 10px;
+    }
+    #heading {
+        text-align: center;
+    }
+    p,ul,li {
+        font-size: 15px;
+        text-align: center;
+        padding: 5px;
+    }
+    p {
+        font-family: serif;
+    }
+    #hireButton{
+        display: block;
+    }
+    img, #hireButton{
+        margin: 0 auto;
+    }
+    #aboutDivImage {
+        margin-top: 45px;
+    }
+    
+}
+
+@media only screen and (max-width: 600px){
+  
+    .navbar-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+    img, div{
+        padding: 0;
+    }
+    img, #hireButton{
+        margin: 0 auto;
+    }
+    p,ul {
+        font-size: 12px;
+        text-align: center;
+        padding: 3px;
+    }
+    p {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    #heading{
+        text-align: center;
+        }
+    h2 {
+        font-family: "Brush Script MT", cursive;
+    }
+    #hireButton {
+        padding: 5px;
+        line-height: normal;
+        font-size: 13px;
+    }
+    #aboutDivImage {
+        margin-top: 50px;
+    }
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+    #home, #body{
+        margin: 0px;
+    }
+}
+
